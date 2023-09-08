@@ -1,0 +1,209 @@
+body{
+    margin: 0;
+}
+.root{
+    height: 100%;
+    width: 100%;
+}
+.topScreen{
+    height: 30%;
+    width: 100%;
+    background: white;
+    overflow-x: scroll;
+}
+.buttonScreen{
+    height: 70%;
+    width: 100%;
+    background: white;
+}
+.screen{
+    width: 100%;
+    padding-left: 25px;
+    font-size: 60px;
+    color: red;
+    margin-top: 20%;
+    margin-right: 15px;
+    float: right;
+    pointer-events: none;
+    border: 0;
+    overflow-x: scroll;
+    
+    
+}
+.raws{
+    height: 20%;
+    width: 100%;
+}
+.buttonBack{
+    float: left;
+    height: 100%;
+    width: 25%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#num7{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
+}
+#num8{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
+}
+#num9{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
+}
+#plus{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
+    
+}
+
+
+#num4{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
+}
+#num5{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
+}
+#num6{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
+}
+#minus{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
+    
+}
+
+#num1{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
+}
+#num2{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
+}
+#num3{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
+}
+#star{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
+    
+}
+
+#num0{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
+}
+#dot{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
+}
+#slash{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
+}
+#equalto{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #FF6363;
+    border: 1px;
+    color: white;
+    border-radius: 50%;
+    
+}
+#buttonC{
+    height: 75px;
+    width: 75px;
+    font-size: 35px;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    color: orange;
+    border-radius: 50%;
+    
+}

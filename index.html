@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Calculator</title>
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="root">
+            <div class="topScreen">
+                <input type="text" class="screen" id="screenText" value="0"/>
+            </div>
+            <div class="buttonScreen">
+                <div class="raws">
+                    <div class="buttonBack">
+                        <button onclick="clearText()" id="buttonC">C</button>
+                    </div>
+                </div>
+                <div class="raws">
+                    <div class="buttonBack">
+                        <button onclick="bClick(7)" id="num7">7</button>
+                    </div>
+                    <div class="buttonBack">
+                        <button onclick="bClick(8)" id="num8">8</button>
+                    </div>
+                    <div class="buttonBack">
+                        <button onclick="bClick(9)" id="num9">9</button>
+                    </div>
+                    <div class="buttonBack">
+                        <button onclick="bClick('+')"  id="plus">+</button>
+                    </div>
+                </div>
+                <div class="raws">
+                    
+                    <div class="buttonBack">
+                        <button onclick="bClick(4)"  id="num4">4</button>
+                    </div>
+                    <div class="buttonBack">
+                        <button onclick="bClick(5)"  id="num5">5</button>
+                    </div>
+                    <div class="buttonBack">
+                        <button onclick="bClick(6)"  id="num6">6</button>
+                    </div>
+                    <div class="buttonBack">
+                        <button onclick="bClick('-')"  id="minus">-</button>
+                    </div>
+                </div>
+                <div class="raws">
+                    <div class="buttonBack">
+                        <button onclick="bClick(1)"  id="num1">1</button>
+                    </div>
+                    <div class="buttonBack">
+                        <button onclick="bClick(2)"  id="num2">2</button>
+                    </div>
+                    <div class="buttonBack">
+                        <button onclick="bClick(3)"  id="num3">3</button>
+                    </div>
+                    <div class="buttonBack">
+                        <button onclick="bClick('*')"  id="star">×</button>
+                    </div>
+                </div>
+                <div class="raws">
+                    <div class="buttonBack">
+                        <button onclick="bClick(0)" id="num0">0</button>
+                    </div>
+                    <div class="buttonBack">
+                        <button id="dot">.</button>
+                    </div>
+                    <div class="buttonBack">
+                        <button onclick="bClick('/')"  id="slash">÷</button>
+                    </div>
+                    <div class="buttonBack">
+                        <button onclick="equalTo()"  id="equalto">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
