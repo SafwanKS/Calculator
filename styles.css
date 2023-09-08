@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    font-style: bold;
 }
 .root{
     height: 100%;
@@ -18,8 +19,8 @@ body{
 }
 .screen{
     width: 100%;
-    padding-left: 25px;
-    font-size: 60px;
+    padding-left: 5%;
+    font-size: 1000%;
     color: red;
     margin-top: 20%;
     margin-right: 15px;
@@ -43,16 +44,16 @@ body{
    align-items: center;
 }
 
-#num7{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
+.btn{
+    height: 90%;
+    width: 80%;
+    font-size: 450%;
     font-style: bold;
     background: #EAEBED;
     border: 1px;
     border-radius: 50%;
 }
-#num8{
+/*#num8{
     height: 75px;
     width: 75px;
     font-size: 35px;
@@ -184,26 +185,26 @@ body{
     background: #EAEBED;
     border: 1px;
     border-radius: 50%;
-}
+}*/
 #equalto{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
+    height: 90%;
+    width: 80%;
+    font-size: 450%;
     font-style: bold;
     background: #FF6363;
     border: 1px;
     color: white;
-    border-radius: 50%;
+    border-radius: 60%;
     
 }
 #buttonC{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
+    height: 90%;
+    width: 80%;
+    font-size: 450%;
     font-style: bold;
     background: #EAEBED;
     border: 1px;
     color: orange;
-    border-radius: 50%;
+    border-radius: 60%;
     
 }
