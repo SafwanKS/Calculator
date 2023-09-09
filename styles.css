@@ -2,16 +2,12 @@ body{
     margin: 0;
     font-style: bold;
 }
-.root{
-    height: 100%;
-    width: 100%;
-}
 .topScreen{
     height: 40%;
     width: 100%;
     background: white
 }
-.buttonScreen{
+.bottomScreen{
     height: 60%;
     width: 100%;
     background: red;
@@ -50,139 +46,6 @@ body{
     border: 1px;
     border-radius: 50%;
 }
-/*#num8{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
-    font-style: bold;
-    background: #EAEBED;
-    border: 1px;
-    border-radius: 50%;
-}
-#num9{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
-    font-style: bold;
-    background: #EAEBED;
-    border: 1px;
-    border-radius: 50%;
-}
-#plus{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
-    font-style: bold;
-    background: #EAEBED;
-    border: 1px;
-    border-radius: 50%;
-    
-}
-
-
-#num4{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
-    font-style: bold;
-    background: #EAEBED;
-    border: 1px;
-    border-radius: 50%;
-}
-#num5{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
-    font-style: bold;
-    background: #EAEBED;
-    border: 1px;
-    border-radius: 50%;
-}
-#num6{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
-    font-style: bold;
-    background: #EAEBED;
-    border: 1px;
-    border-radius: 50%;
-}
-#minus{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
-    font-style: bold;
-    background: #EAEBED;
-    border: 1px;
-    border-radius: 50%;
-    
-}
-
-#num1{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
-    font-style: bold;
-    background: #EAEBED;
-    border: 1px;
-    border-radius: 50%;
-}
-#num2{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
-    font-style: bold;
-    background: #EAEBED;
-    border: 1px;
-    border-radius: 50%;
-}
-#num3{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
-    font-style: bold;
-    background: #EAEBED;
-    border: 1px;
-    border-radius: 50%;
-}
-#star{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
-    font-style: bold;
-    background: #EAEBED;
-    border: 1px;
-    border-radius: 50%;
-    
-}
-
-#num0{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
-    font-style: bold;
-    background: #EAEBED;
-    border: 1px;
-    border-radius: 50%;
-}
-#dot{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
-    font-style: bold;
-    background: #EAEBED;
-    border: 1px;
-    border-radius: 50%;
-}
-#slash{
-    height: 75px;
-    width: 75px;
-    font-size: 35px;
-    font-style: bold;
-    background: #EAEBED;
-    border: 1px;
-    border-radius: 50%;
-}*/
 #equalto{
     height: 90%;
     width: 80%;
