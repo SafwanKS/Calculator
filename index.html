@@ -35,7 +35,7 @@
             color: red;
             pointer-events: none;
             border: 0;
-            margin-top: 100px;
+            margin-top: 130px;
             margin-left: 5px;
         }
         .raws {
@@ -102,6 +102,16 @@
             color: orange;
             border-radius: 50%;
 
+        }
+        #buttonBack{
+            height: 80px;
+            width: 85%;
+            font-size: 250%;
+            font-style: bold;
+            background: #EAEBED;
+            border: 1px;
+            color: orange;
+            border-radius: 50%;
         }
     </style>
     <script src="script.js"></script>
@@ -195,8 +205,13 @@
     <script>
         function bClick(val) {
             if (document.getElementById("screen").value == 0) {
+                if(document.getElementById("screen").value<=10){
+                    
+                }else{
                 document.getElementById("screen").value = ""
                 document.getElementById("screen").value += val
+                }
+                
             } else {
                 document.getElementById("screen").value += val
             }
@@ -207,16 +222,29 @@
 
 
         function equalTo() {
+            
            const display = document.getElementById('screen');
-            try {
+           if(display.value==169){
+               display.value = 'I Love youh😚💝';
+               
+              size = document.getElementById( 'screen' );
+              size.style.fontSize = "250%" ;
+             
+             
+           }else{
+               try {
                 display.value = eval(display.value);
             } catch (error) {
                 display.value = 'Error';
             }
+           }
+            
         }
 
         function clearText() {
             document.getElementById("screen").value = "0"
+            size = document.getElementById( 'screen' );
+              size.style.fontSize = "350%" ;
         }
     </script>
 
