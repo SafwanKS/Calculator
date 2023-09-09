@@ -232,11 +232,18 @@
              
              
            }else{
-               try {
+               if(display.value==226){
+                   display.value = 'Hello, Donkey😹💀';
+               
+              size = document.getElementById( 'screen' );
+              size.style.fontSize = "250%" ;
+               }else{
+                   try {
                 display.value = eval(display.value);
             } catch (error) {
                 display.value = 'Error';
             }
+               }
            }
             
         }
