@@ -14,7 +14,7 @@
             font-style: bold;
 
         }
-        .rootDiv{
+        .rootDiv {
             height: 100%;
             width: 100%;
         }
@@ -22,7 +22,7 @@
             height: 30%;
             width: 100%;
             background: white;
-            
+
         }
         .bottomScreen {
             height: 70%;
@@ -41,7 +41,7 @@
         .raws {
             height: 40%;
             width: 100%;
-            
+
 
         }
         .buttonBack {
@@ -64,7 +64,7 @@
         }
 
         .btn {
-            height:80px;
+            height: 80px;
             width: 85%;
             font-size: 250%;
             font-style: bold;
@@ -73,7 +73,7 @@
             border-radius: 50%;
         }
         #nullbtn {
-            height:80px;
+            height: 80px;
             width: 85%;
             font-size: 250%;
             font-style: bold;
@@ -81,7 +81,7 @@
             border: 1px;
             border-radius: 50%;
         }
-       .equalto {
+        .equalto {
             height: 80px;
             width: 85%;
             font-size: 250%;
@@ -103,7 +103,7 @@
             border-radius: 50%;
 
         }
-        #buttonBack{
+        #buttonBack {
             height: 80px;
             width: 85%;
             font-size: 250%;
@@ -138,13 +138,13 @@
             </div>
             <div class="raws">
                 <div class="buttonBack">
-                    <button onclick="bClick(7)" class="btn">7</button>   
+                    <button onclick="bClick(7)" class="btn">7</button>
                 </div>
                 <div class="buttonBack">
-                    <button onclick="bClick(8)" class="btn">8</button>   
+                    <button onclick="bClick(8)" class="btn">8</button>
                 </div>
                 <div class="buttonBack">
-                    <button onclick="bClick(9)" class="btn">9</button>   
+                    <button onclick="bClick(9)" class="btn">9</button>
                 </div>
                 <div class="buttonBack">
                     <button onclick="bClick('+')" class="btn" id="num7">+</button>
@@ -152,13 +152,13 @@
             </div>
             <div class="raws">
                 <div class="buttonBack">
-                    <button onclick="bClick(4)" class="btn">4</button>   
+                    <button onclick="bClick(4)" class="btn">4</button>
                 </div>
                 <div class="buttonBack">
-                    <button onclick="bClick(5)" class="btn">5</button>   
+                    <button onclick="bClick(5)" class="btn">5</button>
                 </div>
                 <div class="buttonBack">
-                    <button onclick="bClick(6)" class="btn">6</button>   
+                    <button onclick="bClick(6)" class="btn">6</button>
                 </div>
                 <div class="buttonBack">
                     <button onclick="bClick('-')" class="btn">-</button>
@@ -166,13 +166,13 @@
             </div>
             <div class="raws">
                 <div class="buttonBack">
-                    <button onclick="bClick(1)" class="btn">1</button>   
+                    <button onclick="bClick(1)" class="btn">1</button>
                 </div>
                 <div class="buttonBack">
-                    <button onclick="bClick(2)" class="btn">2</button>   
+                    <button onclick="bClick(2)" class="btn">2</button>
                 </div>
                 <div class="buttonBack">
-                    <button onclick="bClick(3)" class="btn">3</button>   
+                    <button onclick="bClick(3)" class="btn">3</button>
                 </div>
                 <div class="buttonBack">
                     <button onclick="bClick('*')" class="btn">×</button>
@@ -180,13 +180,13 @@
             </div>
             <div class="raws">
                 <div class="buttonBack">
-                    <button onclick="bClick(0)" class="btn">0</button>   
+                    <button onclick="bClick(0)" class="btn">0</button>
                 </div>
                 <div class="buttonBack">
-                    <button onclick="bClick('.')" class="btn">.</button>   
+                    <button onclick="bClick('.')" class="btn">.</button>
                 </div>
                 <div class="buttonBack">
-                    <button onclick="bClick('/')" class="btn">÷</button>   
+                    <button onclick="bClick('/')" class="btn">÷</button>
                 </div>
                 <div class="buttonBack">
                     <button onclick="equalTo()" class="equalto">=</button>
@@ -205,13 +205,11 @@
     <script>
         function bClick(val) {
             if (document.getElementById("screen").value == 0) {
-                if(document.getElementById("screen").value>=10){
-                    
-                }else{
+                if (document.getElementById("screen").value >= 10) {} else {
                     document.getElementById("screen").value = ""
                     document.getElementById("screen").value += val
                 }
-                
+
             } else {
                 document.getElementById("screen").value += val
             }
@@ -222,36 +220,43 @@
 
 
         function equalTo() {
-            
-           const display = document.getElementById('screen');
-           if(display.value==169){
-               display.value = 'I Love youh😚💝';
-               
-              size = document.getElementById( 'screen' );
-              size.style.fontSize = "250%" ;
-             
-             
-           }else{
-               if(display.value==226){
-                   display.value = 'Hi, Vaazhee 🌱';
-               
-              size = document.getElementById( 'screen' );
-              size.style.fontSize = "250%" ;
-               }else{
-                   try {
-                display.value = eval(display.value);
-            } catch (error) {
-                display.value = 'Error';
+
+            const display = document.getElementById('screen');
+            if (display.value == 169) {
+                display.value = 'I Love youh😚💝';
+
+                size = document.getElementById('screen');
+                size.style.fontSize = "250%";
+
+
+            } else {
+                if (display.value == 226) {
+                    display.value = 'Please wait...';
+                    
+                    size = document.getElementById('screen');
+                    size.style.fontSize = "250%";
+                    goPage()
+                } else {
+                    try {
+                        display.value = eval(display.value);
+                    } catch (error) {
+                        display.value = 'Error';
+                    }
+                }
             }
-               }
-           }
-            
+
         }
 
         function clearText() {
             document.getElementById("screen").value = "0"
-            size = document.getElementById( 'screen' );
-              size.style.fontSize = "350%" ;
+            size = document.getElementById('screen');
+            size.style.fontSize = "350%";
+        }
+
+        function goPage() {
+            setTimeout(function () {
+                window.open("secondpage.html");
+            }, 3000);
         }
     </script>
 
