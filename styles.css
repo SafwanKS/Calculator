@@ -7,13 +7,12 @@ body{
     width: 100%;
 }
 .topScreen{
-    height: 30%;
+    height: 40%;
     width: 100%;
-    background: white;
-    overflow-x: scroll;
+    background: white
 }
 .buttonScreen{
-    height: 70%;
+    height: 100%;
     width: 100%;
     background: white;
 }
@@ -26,13 +25,12 @@ body{
     margin-right: 15px;
     float: right;
     pointer-events: none;
-    border: 0;
-    overflow-x: scroll;
+    border: 0
     
     
 }
 .raws{
-    height: 20%;
+    height: 50%;
     width: 100%;
 }
 .buttonBack{
