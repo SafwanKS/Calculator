@@ -205,11 +205,11 @@
     <script>
         function bClick(val) {
             if (document.getElementById("screen").value == 0) {
-                if(document.getElementById("screen").value<=10){
+                if(document.getElementById("screen").value>=10){
                     
                 }else{
-                document.getElementById("screen").value = ""
-                document.getElementById("screen").value += val
+                    document.getElementById("screen").value = ""
+                    document.getElementById("screen").value += val
                 }
                 
             } else {
