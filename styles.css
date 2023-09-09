@@ -12,9 +12,9 @@ body{
     background: white
 }
 .buttonScreen{
-    height: 100%;
+    height: 60%;
     width: 100%;
-    background: white;
+    background: red;
 }
 .screen{
     width: 100%;
@@ -34,7 +34,6 @@ body{
     width: 100%;
 }
 .buttonBack{
-    float: left;
     height: 100%;
     width: 25%;
    display: flex;
