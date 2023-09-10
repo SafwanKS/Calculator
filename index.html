@@ -113,12 +113,23 @@
             color: orange;
             border-radius: 50%;
         }
+        #backBtn{
+            height: 80px;
+            width: 85%;
+            font-size: 250%;
+            font-style: bold;
+            background: #EAEBED;
+            border: 1px;
+            border-radius: 50%;
+        }
+        
     </style>
     <script src="script.js"></script>
 </head>
 <body>
     <div class="rootDiv">
         <div class="topScreen">
+            
             <input type="text" id="screen" value="0" readonly>
         </div>
         <div class="bottomScreen">
@@ -133,7 +144,7 @@
                     <button id="nullbtn"> </button>
                 </div>
                 <div class="buttonBack">
-                    <button id="nullbtn"> </button>
+                    <img src="images/back.png" onclick="backClick" id="backBtn">
                 </div>
             </div>
             <div class="raws">
@@ -215,7 +226,18 @@
             }
 
         }
-
+       
+       
+        function backClick(){
+           
+            const display = document.getElementById('screen');
+                var str = displa.value
+                var result = str.toString().substring(0, str.toString().length - 1);
+                display.value = result
+               
+               
+            
+        }
 
 
 
