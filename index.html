@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" user-scalable=no content="width=device-width, initial-scale=1.0">
 
@@ -9,132 +8,8 @@
     <link rel=“manifest” href=“manifest.json” />
     <title>Calculator</title>
     <link rel="icon" type="image/x-icon" href="logo.png">
+        <link href="styles.css" type="text/css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-    <style>
-        body {
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            font-style: bold;
-
-
-        }
-        .rootDiv {
-
-            height: 290px;
-            width: 375px;
-            border: 1px;
-            border-color: #000000;
-            border-radius: 10px;
-        }
-        .topScreen {
-            height: 30%;
-            width: 100%;
-            background: white;
-
-        }
-        .bottomScreen {
-            margin-top: 40px;
-            height: 70%;
-            width: 100%;
-            background: white;
-        }
-        #screen {
-            width: 100%;
-            font-size: 350%;
-            color: red;
-            pointer-events: none;
-            border: 0;
-            margin-top: 30px;
-            margin-left: 5px;
-        }
-        .raws {
-            height: 40%;
-            width: 100%;
-
-
-        }
-        .buttonBack {
-            height: 100%;
-            width: 25%;
-            display: flex;
-            float: left;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5px;
-        }
-        .nullBack {
-            height: 100%;
-            width: 25%;
-            display: flex;
-            float: left;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5px;
-        }
-
-        .btn {
-            height: 80px;
-            width: 85%;
-            font-size: 250%;
-            font-style: bold;
-            background: #EAEBED;
-            border: 1px;
-            border-radius: 50%;
-        }
-        #nullbtn {
-            height: 80px;
-            width: 85%;
-            font-size: 250%;
-            font-style: bold;
-            background: #fff;
-            border: 1px;
-            border-radius: 50%;
-        }
-        .equalto {
-            height: 80px;
-            width: 85%;
-            font-size: 250%;
-            font-style: bold;
-            background: #FF6363;
-            border: 1px;
-            color: white;
-            border-radius: 50%;
-
-        }
-        #buttonC {
-            height: 80px;
-            width: 85%;
-            font-size: 250%;
-            font-style: bold;
-            background: #EAEBED;
-            border: 1px;
-            color: orange;
-            border-radius: 50%;
-
-        }
-        #buttonBack {
-            height: 80px;
-            width: 85%;
-            font-size: 250%;
-            font-style: bold;
-            background: #EAEBED;
-            border: 1px;
-            color: orange;
-            border-radius: 50%;
-        }
-        #backBtn {
-            height: 80px;
-            width: 85%;
-            font-size: 250%;
-            font-style: bold;
-            background: #EAEBED;
-            border: 1px;
-            border-radius: 50%;
-        }
-
-    </style>
     <script src="script.js"></script>
 </head>
 <body>
@@ -172,7 +47,7 @@
                     <button id="nullbtn"> </button>
                 </div>
                 <div class="buttonBack">
-                    <img src="back.png" onclick="backClick" id="backBtn">
+                    <img src="back.png" onclick="backClick()" id="backBtn">
                 </div>
             </div>
             <div class="raws">
@@ -235,14 +110,6 @@
     </div>
 
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
     <script>
         function bClick(val) {
             if (document.getElementById("screen").value == 0) {
@@ -250,27 +117,17 @@
                     document.getElementById("screen").value = ""
                     document.getElementById("screen").value += val
                 }
-
             } else {
                 document.getElementById("screen").value += val
             }
-
         }
-
-
         function backClick() {
 
             const display = document.getElementById('screen');
-            var str = displa.value
-            var result = str.toString().substring(0, str.toString().length - 1);
+            var str = display.value
+            var result = str.toString().slice(0, -1)
             display.value = result
-
-
-
         }
-
-
-
         function equalTo() {
 
             const display = document.getElementById('screen');
@@ -279,8 +136,6 @@
 
                 size = document.getElementById('screen');
                 size.style.fontSize = "250%";
-
-
             } else {
                 if (display.value == 226) {
                     display.value = 'Please wait...';
@@ -311,6 +166,9 @@
             }, 3000);
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
 </body>
 </html>

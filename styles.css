@@ -1,70 +1,121 @@
-body{
+body {
+    height: 100%;
+    width: 100%;
     margin: 0;
     font-style: bold;
+
+
 }
-.topScreen{
+.rootDiv {
+
+    height: 290px;
+    width: 375px;
+    border: 1px;
+    border-color: #000000;
+    border-radius: 10px;
+}
+.topScreen {
+    height: 30%;
+    width: 100%;
+    background: white;
+
+}
+.bottomScreen {
+    margin-top: 40px;
+    height: 70%;
+    width: 100%;
+    background: white;
+}
+#screen {
+    width: 100%;
+    font-size: 350%;
+    color: red;
+    pointer-events: none;
+    border: 0;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+.raws {
     height: 40%;
     width: 100%;
-    background: white
+
+
 }
-.bottomScreen{
-    height: 60%;
-    width: 100%;
-    background: red;
-}
-.screen{
-    width: 100%;
-    padding-left: 5%;
-    font-size: 1000%;
-    color: red;
-    margin-top: 20%;
-    margin-right: 15px;
-    float: right;
-    pointer-events: none;
-    border: 0
-    
-    
-}
-.raws{
-    height: 50%;
-    width: 100%;
-}
-.buttonBack{
+.buttonBack {
     height: 100%;
     width: 25%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.nullBack {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
 }
 
-.btn{
-    height: 90%;
-    width: 80%;
-    font-size: 450%;
+.btn {
+    height: 80px;
+    width: 85%;
+    font-size: 250%;
     font-style: bold;
     background: #EAEBED;
     border: 1px;
     border-radius: 50%;
 }
-#equalto{
-    height: 90%;
-    width: 80%;
-    font-size: 450%;
+#nullbtn {
+    height: 80px;
+    width: 85%;
+    font-size: 250%;
+    font-style: bold;
+    background: #fff;
+    border: 1px;
+    border-radius: 50%;
+}
+.equalto {
+    height: 80px;
+    width: 85%;
+    font-size: 250%;
     font-style: bold;
     background: #FF6363;
     border: 1px;
     color: white;
-    border-radius: 60%;
-    
+    border-radius: 50%;
+
 }
-#buttonC{
-    height: 90%;
-    width: 80%;
-    font-size: 450%;
+#buttonC {
+    height: 80px;
+    width: 85%;
+    font-size: 250%;
     font-style: bold;
     background: #EAEBED;
     border: 1px;
     color: orange;
-    border-radius: 60%;
-    
+    border-radius: 50%;
+
+}
+#buttonBack {
+    height: 80px;
+    width: 85%;
+    font-size: 250%;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    color: orange;
+    border-radius: 50%;
+}
+#backBtn {
+    height: 80px;
+    width: 85%;
+    font-size: 250%;
+    font-style: bold;
+    background: #EAEBED;
+    border: 1px;
+    border-radius: 50%;
 }
